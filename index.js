@@ -28,7 +28,7 @@ function sucesso(){
     novoGif.innerHTML = `<img src="fyEa.gif" alt="" id="gif">`
     
     const mensagem = document.getElementById('mensagem')
-    mensagem.innerHTML = "We are officially dating!"
+    mensagem.innerHTML = `We are officially dating! <p>Daniel Santiago & Ace Santiago`
 
     botaoNao.style.display = 'none'
 }
