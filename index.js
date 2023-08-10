@@ -19,16 +19,16 @@ function sucesso(){
     const gif = document.getElementById('gif')
     const sim = document.getElementById('sim')
 
-    sim.innerHTML = `<a href="https://www.youtube.com/watch?v=KrsqPE9SMxo&ab_channel=LostPanda"> Here </a>`
+    sim.innerHTML = `<a href="https://youtu.be/2a3sD89Um4k"> AQUI! </a>`
 
     gif.style.display = 'none'
 
     const novoGif = document.getElementById('novoGif')
 
-    novoGif.innerHTML = `<img src="fyEa.gif" alt="" id="gif">`
+    novoGif.innerHTML = `<img src="love.gif" alt="" id="gif">`
     
     const mensagem = document.getElementById('mensagem')
-    mensagem.innerHTML = `We are officially dating! <p>Daniel Santiago & Ace Santiago`
+    mensagem.innerHTML = `<p>Oficialmente Daniel Santiago & Luis Santiago</p>`
 
     botaoNao.style.display = 'none'
 }
