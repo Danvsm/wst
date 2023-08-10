@@ -19,6 +19,7 @@ body {
 }
 
 main {
+    background-color: #800080;
     background-color: #f8f8f8;
     display: flex;
     flex-direction: column;
