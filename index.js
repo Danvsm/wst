@@ -19,7 +19,7 @@ function sucesso(){
     const gif = document.getElementById('gif')
     const sim = document.getElementById('sim')
 
-    sim.innerHTML = `<a href="https://youtu.be/2a3sD89Um4k"> AQUI! </a>`
+    sim.innerHTML = `<a href="https://www.youtube.com/shorts/GVOGHwtD13o"> AQUI! </a>`
 
     gif.style.display = 'none'
 
@@ -28,7 +28,7 @@ function sucesso(){
     novoGif.innerHTML = `<img src="love.gif" alt="" id="gif">`
     
     const mensagem = document.getElementById('mensagem')
-    mensagem.innerHTML = `<p>Oficialmente Daniel Santiago & Luis Santiago</p>`
+    mensagem.innerHTML = `<p>Oficialmente Daniel Santiago & Ludo Santiago</p>`
 
     botaoNao.style.display = 'none'
 }
