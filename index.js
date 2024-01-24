@@ -28,7 +28,7 @@ function sucesso(){
     novoGif.innerHTML = `<img src="love.gif" alt="" id="gif">`
     
     const mensagem = document.getElementById('mensagem')
-    mensagem.innerHTML = `<p>Oficialmente Daniel Santiago & Ludo Santiago</p>`
+    mensagem.innerHTML = `<p>Oficialmente Namorados Daniel Santiago & Vladmir Santiao</p>`
 
     botaoNao.style.display = 'none'
 }
