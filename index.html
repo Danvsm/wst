@@ -2,28 +2,29 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Seja Bem-Vindo Vlad</title>
+    <title>Seja Bem-Vindo Vida</title>
 </head>
 <body>
     <main>
         <h1>Olá, amor da minha vida!</h1>
         
         <div id="novoGif">
-            <img src="sorriso.gif" alt="" id="gif">
+            <img src="sorriso.gif" alt="Imagem inicial" id="gif">
         </div>
         
         <h2 id="mensagem">Aceita namorar comigo?</h2>
 
-        <div id="escolha">
-            <div id="sim" onclick="sucesso()">Sim</div>
-            <div id="nao" onclick="fuja()" onmouseover="fuja()">Não</div>
+        <div id="escolha-container">
+            <div id="escolha">
+                <button id="sim" onclick="sucesso()">Sim</button>
+            </div>
+            <button id="nao" onclick="fuja()" onmouseover="fuja()">Não</button>
         </div>
+        
     </main>
 
-    <script src="index.js"></script>
+    <script src="index.js" defer></script>
 </body>
 </html>
-

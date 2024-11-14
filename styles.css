@@ -1,85 +1,139 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400&display=swap');
 
+/* Reset básico */
 * {
     margin: 0;
     padding: 0;
-}
-
-a {
-    list-style: none;
-    color: #f8f8f8;
+    box-sizing: border-box;
 }
 
 html {
     background-color: #800080;
 }
-body {
-    
-    margin: 5%;
-}
 
-main {
-    background-color: #800080;
-    background-color: #f8f8f8;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    margin: auto;
-    width: 50%;
-    padding: 50px;
+body {
+    margin: 5%;
     font-family: 'Roboto', sans-serif;
 }
 
-h1 {
-    color: brown;
-    font-size: 5em;
+/* Estilização principal */
+main {
+    background-color: #f8f8f8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 90%; /* Largura ajustável */
+    max-width: 600px; /* Limita a largura em telas grandes */
+    padding: 30px;
+    margin: auto;
+    border-radius: 8px;
 }
 
-img {
-    margin: auto;
-    width: 100%;
+/* Títulos */
+h1, h2 {
+    color: brown;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 3em; /* Ajuste para melhor visualização em telas menores */
 }
 
 h2 {
-    color: brown;
     padding: 20px;
+    font-size: 1.5em;
 }
 
-#escolha {
-    position: relative;
-    margin: auto;
+/* Imagem */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Links */
+a {
+    color: #f8f8f8;
+    text-decoration: none;
+}
+
+/* Contêiner de Escolha */
+#escolha-container {
     display: flex;
-    gap: 40px;
-    
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
 }
 
+/* Área de escolha */
+#escolha {
+    display: flex;
+    gap: 20px; /* Espaço entre os botões */
+}
 
-#sim {
-    position: absolute;
-    right: 20px;
+/* Botão Sim */
+#sim, #nao {
     background-color: brown;
+    color: #f8f8f8;
     width: 80px;
     padding: 10px;
-    color: #f8f8f8;
-   
-
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 #sim:hover {
     background-color: red;
     font-weight: 500;
-   
-   
-
 }
 
-
+/* Botão Não */
 #nao {
-    position: fixed;
     background-color: darkgray;
-    width: 80px;
-    padding: 10px;
     color: black;
+    position: relative; /* Para que possa se mover de forma independente */
 }
 
+/* Media Queries para Dispositivos Móveis */
+@media (max-width: 768px) {
+    main {
+        width: 95%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+        padding: 15px;
+    }
+
+    #escolha {
+        gap: 25px;
+    }
+
+    #sim, #nao {
+        width: 70px;
+        padding: 8px;
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1em;
+        padding: 10px;
+    }
+
+    #sim, #nao {
+        width: 60px;
+        padding: 6px;
+    }
+}
